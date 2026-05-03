@@ -134,7 +134,3 @@ pytest
 - Add customizable templates for generated code
 - Add SVG or PNG graph rendering when Graphviz is installed
 - Add incremental generation and formatting hooks
-
-## Resume Bullet Suggestion
-
-- Built `SignalForge`, a Python and Rust developer tooling project that validates YAML interface schemas and generates typed code, Markdown docs, JSON reports, and communication graphs for component integration workflows.
