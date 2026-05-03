@@ -104,8 +104,8 @@ pub struct BatteryStatus {
 ## Setup Instructions
 
 ```bash
-cd /Users/nidhikonanur/Documents/Playground/signalforge
-python3.12 -m venv .venv
+git clone https://github.com/YOUR_USERNAME/signalforge.git
+cd signalforgepython3.12 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
 pip install -e .
@@ -114,8 +114,8 @@ pip install -e .
 ## Test Instructions
 
 ```bash
-cd /Users/nidhikonanur/Documents/Playground/signalforge
-source .venv/bin/activate
+git clone https://github.com/YOUR_USERNAME/signalforge.git
+cd signalforgesource .venv/bin/activate
 pytest
 ```
 
