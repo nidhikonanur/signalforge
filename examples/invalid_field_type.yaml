@@ -1,0 +1,9 @@
+components:
+  - name: MotorController
+    messages:
+      - id: 4001
+        name: MotorFeedback
+        direction: publish
+        fields:
+          - name: rpm
+            type: uint64

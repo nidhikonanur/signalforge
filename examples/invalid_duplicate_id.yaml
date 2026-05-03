@@ -1,0 +1,18 @@
+components:
+  - name: BatteryController
+    messages:
+      - id: 1001
+        name: BatteryStatus
+        direction: publish
+        fields:
+          - name: pack_voltage
+            type: float32
+
+  - name: SafetyMonitor
+    messages:
+      - id: 1001
+        name: SafetyAlert
+        direction: publish
+        fields:
+          - name: active
+            type: bool

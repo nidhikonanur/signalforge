@@ -1,0 +1,52 @@
+components:
+  - name: BatteryController
+    messages:
+      - id: 1001
+        name: BatteryStatus
+        direction: publish
+        frequency_hz: 10
+        fields:
+          - name: pack_voltage
+            type: float32
+            unit: V
+          - name: pack_current
+            type: float32
+            unit: A
+          - name: state_of_charge
+            type: uint8
+            unit: percent
+
+      - id: 1002
+        name: ThermalCommand
+        direction: subscribe
+        fields:
+          - name: target_temperature
+            type: float32
+            unit: C
+
+  - name: ThermalManager
+    messages:
+      - id: 2001
+        name: ThermalCommand
+        direction: publish
+        frequency_hz: 2
+        fields:
+          - name: target_temperature
+            type: float32
+            unit: C
+
+  - name: TelemetryService
+    messages:
+      - id: 3001
+        name: BatteryStatus
+        direction: subscribe
+        fields:
+          - name: pack_voltage
+            type: float32
+            unit: V
+          - name: pack_current
+            type: float32
+            unit: A
+          - name: state_of_charge
+            type: uint8
+            unit: percent

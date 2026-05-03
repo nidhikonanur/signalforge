@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "signalforge"
+version = "0.1.0"
+description = "Schema-driven developer tool for generating code, docs, reports, and interface graphs."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "PyYAML==6.0.2",
+]
+
+[project.scripts]
+signalforge = "signalforge.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["signalforge*"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]

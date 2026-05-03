@@ -1,0 +1,8 @@
+.venv/
+__pycache__/
+.pytest_cache/
+generated/*.py
+generated/*.rs
+generated/*.md
+generated/*.dot
+generated/*.json
